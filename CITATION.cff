@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use these scenarios, event records, or scripts, please cite the paper and this release."
+title: "Two-Stage Measurement of Update Adherence in Language Model Memory Agents: benchmark, event records, and scoring scripts"
+type: software
+authors:
+  - family-names: Lee
+    given-names: Hoyeon
+    affiliation: Shinhan University
+version: "1.0"
+date-released: "2026-10-10"
+repository-code: "https://github.com/hoyeonmk3/update-adherence"
+license: MIT
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23280325"
+    description: "Zenodo archive of release v1.0"
+preferred-citation:
+  type: article
+  title: "Two-Stage Measurement of Update Adherence in Language Model Memory Agents"
+  authors:
+    - family-names: Lee
+      given-names: Hoyeon
+      affiliation: Shinhan University
+  journal: "PeerJ Computer Science"
+  year: 2026
+  notes: "Manuscript under submission; the citation will be completed on publication."

@@ -1,0 +1,1314 @@
+[
+ {
+  "scenario_id": "hold-out-U001",
+  "scenario_type": "UPDATE_CONFLICT",
+  "total_turns": 200,
+  "recall": 0.125,
+  "found": 1,
+  "total_gt": 8,
+  "ccr": 0.8274,
+  "context_ua": [
+   {
+    "gt_id": "gt_001",
+    "has_new": false,
+    "has_old": false
+   }
+  ],
+  "behavior": [
+   {
+    "gt_id": "gt_001",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "329°C"
+    ],
+    "old_only_tokens": [
+     "341°C"
+    ],
+    "new_tokens_hit": [],
+    "old_tokens_hit": []
+   }
+  ],
+  "context_text": "- User mentioned checking the current status of engineering requirements\n- User asked to check the current status of engineering requirements and update documentation accordingly\n- User asked how their current engineering requirements compare to industry standards\n- User checked the current status of engineering requirements and updated an old standard from 272 to a new value on October 6, 2026\n- User checked the current status of engineering requirements and updated another old standard from 272 to a new value on October 6, 2026\n- User mentioned checking the current status of engineering requirements and updating an old standard from 106 to a new value on October 6, 2026\n- User checked the current status of engineering requirements and updated an old standard from 106 to a new value\n- User asked how the current engineering specifications compare to industry standards on October 6, 2026\n- User asked how their current engineering specifications compare to industry standards on October 6, 2026\n- User asked about the next requirement for their engineering project\n- User requested to review the constraints established for their project on October 6, 2026\n- User requested to review the constraints established for the project on October 6, 2026\n- User requested to review constraints established for the project on October 6, 2026\n- User expressed interest in reviewing established constraints for the project\n- User asked how their current specifications compare to industry standards on October 6, 2026\n- User asked about considering industry trends and how current requirements compare to industry standards on October 6, 2026\n- User specified that the tensile strength must be at least 447 MPa for an important requirement\n- User specified an important requirement that the tensile strength must be at least 447 MPa\n- User asked how their current specifications compare to industry standards multiple times on October 6, 2026\n- User added an important requirement for the project: Thermal conductivity shall exceed 21 W/mK on October 6, 2026",
+  "answer_text": "Based on the information provided in our conversation:\n\n1. Update an old standard from 272 to a new value (checked and updated twice on October 6, 2026).\n2. Update an old standard from 106 to a new value.\n3. Tensile strength must be at least 447 MPa.\n4. Thermal conductivity shall exceed 21 W/mK.\n\nThese are the current engineering constraints and requirements as mentioned in our conversation.",
+  "event_counts": {},
+  "supersession_events": [],
+  "replay_s": 294.0,
+  "patched": true,
+  "num_ctx_extraction": 16384
+ },
+ {
+  "scenario_id": "hold-out-U002",
+  "scenario_type": "UPDATE_CONFLICT",
+  "total_turns": 200,
+  "recall": 0.25,
+  "found": 2,
+  "total_gt": 8,
+  "ccr": 0.8107,
+  "context_ua": [
+   {
+    "gt_id": "gt_006",
+    "has_new": false,
+    "has_old": false
+   },
+   {
+    "gt_id": "gt_008",
+    "has_new": false,
+    "has_old": false
+   }
+  ],
+  "behavior": [
+   {
+    "gt_id": "gt_006",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "412mm"
+    ],
+    "old_only_tokens": [
+     "320mm"
+    ],
+    "new_tokens_hit": [],
+    "old_tokens_hit": []
+   },
+   {
+    "gt_id": "gt_008",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "61"
+    ],
+    "old_only_tokens": [
+     "9"
+    ],
+    "new_tokens_hit": [],
+    "old_tokens_hit": []
+   }
+  ],
+  "context_text": "- User inquired about the current status of medical requirements for their project on October 6, 2026\n- User requested a summary of the current status of medical requirements for their project on October 6, 2026\n- User requested a summary of the medical project requirements covered so far on October 6, 2026\n- User asked how the current requirements compare to industry standards for their medical project on October 6, 2026\n- User requested a review of the constraints established for their medical project on October 6, 2026\n- User asked how the current requirement compares to industry standards for their medical project on October 6, 2026\n- User requested a summary of what has been covered so far in their medical project requirements on October 6, 2026\n- User compared their medical requirements to industry standards on October 6, 2026\n- User asked about the next requirement for their medical project on October 6, 2026\n- User asked how the current medical project specifications compare to industry standards on October 6, 2026\n- User specified an important medical requirement for the project: Patient BMI threshold for procedure is below 476 on October 6, 2026\n- User requested the assistant to summarize what has been covered so far in their medical project requirements on October 6, 2026\n- User inquired how the current medical project specifications compare to industry standards on October 6, 2026\n- User inquired about dependencies between the specifications discussed for their medical project on October 6, 2026\n- User asked if there were any dependencies between the specifications discussed for their medical project on October 6, 2026\n- User asked how the medical specifications compare to industry standards on October 6, 2026\n- User inquired about dependencies between specifications discussed for their medical project on October 6, 2026\n- User asked about dependencies between the specifications discussed for their medical project on October 6, 2026\n- User specified an important medical requirement for the project: Dosage must not exceed 426mg per kg body weight\n- User specified that the previous project's specification was set to 760, but this is for a new medical project on October 6, 2026",
+  "answer_text": "The current medical constraints and requirements listed in the memory are:\n\n1. Patient BMI threshold for procedure is below 476.\n2. Dosage must not exceed 426mg per kg body weight.\n\nPlease note that the user mentioned a previous project's specification of 760, but this was stated to be for a different context and not applicable to the current medical project requirements as specified on October 6, 2026.",
+  "event_counts": {},
+  "supersession_events": [],
+  "replay_s": 296.0,
+  "patched": true,
+  "num_ctx_extraction": 16384
+ },
+ {
+  "scenario_id": "hold-out-U003",
+  "scenario_type": "UPDATE_CONFLICT",
+  "total_turns": 200,
+  "recall": 0.25,
+  "found": 2,
+  "total_gt": 8,
+  "ccr": 0.7953,
+  "context_ua": [
+   {
+    "gt_id": "gt_004",
+    "has_new": false,
+    "has_old": true
+   },
+   {
+    "gt_id": "gt_005",
+    "has_new": false,
+    "has_old": false
+   },
+   {
+    "gt_id": "gt_007",
+    "has_new": true,
+    "has_old": false
+   }
+  ],
+  "behavior": [
+   {
+    "gt_id": "gt_004",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "312"
+    ],
+    "old_only_tokens": [
+     "406"
+    ],
+    "new_tokens_hit": [
+     "312"
+    ],
+    "old_tokens_hit": []
+   },
+   {
+    "gt_id": "gt_005",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "100"
+    ],
+    "old_only_tokens": [
+     "167"
+    ],
+    "new_tokens_hit": [],
+    "old_tokens_hit": [
+     "167"
+    ]
+   },
+   {
+    "gt_id": "gt_007",
+    "ans_new_verbatim": true,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "250"
+    ],
+    "old_only_tokens": [
+     "279"
+    ],
+    "new_tokens_hit": [
+     "250"
+    ],
+    "old_tokens_hit": []
+   }
+  ],
+  "context_text": "- User asked how the current legal specifications compare to industry standards on October 7, 2026\n- User mentioned supply chain challenges related to the legal project specifications on October 7, 2026\n- User asked about dependencies between the specifications discussed for the legal project on October 7, 2026\n- User requested a summary of what has been covered so far in the legal project\n- User asked how the legal specifications compare to industry standards\n- User updated a previous requirement for the legal project: Arbitration venue must be in jurisdiction 100, replacing earlier specifications\n- User updated a previous requirement for the legal project: Force majeure notification deadline is now 312 hours, replacing earlier specifications\n- User inquired about dependencies between specifications discussed for the legal project\n- User specified an important requirement for the legal project: Liability cap must not exceed 705% of contract value as a preference\n- User updated a previous requirement for the legal project: force majeure notification deadline is now 312 hours, replacing earlier specifications\n- User specified an important requirement for the legal project: Arbitration venue must be in jurisdiction 712 based on historical data from past projects\n- User specified an important requirement for the legal project: liability cap must not exceed 107% of contract value\n- User specified an important requirement for the legal project: Force majeure notification deadline is 406 hours\n- User updated the data retention period requirement for the legal project to 250 years from collection date, replacing an earlier specification of 279 years\n- User specified an important requirement for the legal project: indemnification limit is 446 times annual fee on October 7, 2026\n- User specified an important requirement for the legal project: indemnification limit is 446 times annual fee on October 7, 2026\n- User added another important requirement for the legal project: Response time for legal hold notice is 149 business days\n- User updated a previous requirement for the legal project: Data retention period is 250 years from collection date (replaces earlier specification)\n- User specified an important requirement for the legal project: confidentiality obligation extends 343 years after termination\n- User specified an important requirement for the legal project: Arbitration venue must be in jurisdiction 167",
+  "answer_text": "Here are the current legal constraints and requirements for the project based on your updates:\n\n1. Arbitration venue must be in jurisdiction 167.\n2. Force majeure notification deadline is now 312 hours.\n3. Liability cap must not exceed 107% of contract value.\n4. Indemnification limit is 446 times annual fee.\n5. Response time for legal hold notice is 149 business days.\n6. Confidentiality obligation extends 343 years after termination.\n7. Data retention period is 250 years from collection date.",
+  "event_counts": {},
+  "supersession_events": [],
+  "replay_s": 271.3,
+  "patched": true,
+  "num_ctx_extraction": 16384
+ },
+ {
+  "scenario_id": "hold-out-U004",
+  "scenario_type": "UPDATE_CONFLICT",
+  "total_turns": 200,
+  "recall": 0.0,
+  "found": 0,
+  "total_gt": 13,
+  "ccr": 0.8037,
+  "context_ua": [
+   {
+    "gt_id": "gt_010",
+    "has_new": false,
+    "has_old": false
+   },
+   {
+    "gt_id": "gt_007",
+    "has_new": false,
+    "has_old": false
+   }
+  ],
+  "behavior": [
+   {
+    "gt_id": "gt_010",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": true,
+    "new_only_tokens": [
+     "468%"
+    ],
+    "old_only_tokens": [
+     "378%"
+    ],
+    "new_tokens_hit": [],
+    "old_tokens_hit": [
+     "378%"
+    ]
+   },
+   {
+    "gt_id": "gt_007",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": true,
+    "new_only_tokens": [
+     "509"
+    ],
+    "old_only_tokens": [
+     "442"
+    ],
+    "new_tokens_hit": [],
+    "old_tokens_hit": [
+     "442"
+    ]
+   }
+  ],
+  "context_text": "- User asked to review established constraints and requirements for their finance project\n- User mentioned an important requirement for the finance project: foreign exchange exposure limit is 378% of assets\n- User specified an important requirement for the finance project: capital adequacy ratio must exceed a certain percentage, ideally around 185%\n- User specified an important requirement for the finance project: foreign exchange exposure limit is 378% of assets\n- User updated the capital adequacy ratio requirement to exceed 289% for the finance project\n- User asked how the current requirement for debt-to-equity ratio compares to industry standards\n- User specified an important requirement for the finance project: minimum reserve ratio must be maintained at 438%\n- User specified an important requirement for the finance project: loan-to-value ratio maximum is 257%\n- User specified an important requirement for the finance project: maximum portfolio exposure to a single sector is approximately 760%\n- User specified an important requirement for the finance project: debt-to-equity ratio ceiling is 358\n- User specified an important requirement for the finance project: debt-to-equity ratio ceiling is approximately 924\n- User specified an important requirement for the finance project: operational risk capital allocation is suggested to be around 781% of gross, though it's not critical\n- User specified an important requirement for the finance project: maximum portfolio exposure to a single sector is 167%\n- User specified an important requirement for the finance project: minimum collateral coverage ratio is 238x\n- User asked how the current requirement for maximum portfolio exposure compares to industry standards\n- User specified an important requirement for the finance project: interest rate cap on variable loans is 418%\n- User specified an important requirement for the finance project: transaction approval threshold is 240 USD\n- User specified an important requirement for the finance project: trading volume daily limit is 266 million USD\n- User specified an important requirement for the finance project: trading volume daily limit is 266 million USD\n- User specified an important requirement for the finance project: quarterly reporting deadline is 442 business days after quarter end",
+  "answer_text": "Here are the current finance constraints and requirements as specified:\n\n1. Foreign exchange exposure limit is 378% of assets.\n2. Capital adequacy ratio must exceed 289%.\n3. Minimum reserve ratio must be maintained at 438%.\n4. Loan-to-value ratio maximum is 257%.\n5. Maximum portfolio exposure to a single sector is 167%.\n6. Debt-to-equity ratio ceiling is approximately 924.\n7. Operational risk capital allocation is suggested to be around 781% of gross, though it's not critical.\n8. Minimum collateral coverage ratio is 238x.\n9. Interest rate cap on variable loans is 418%.\n10. Transaction approval threshold is 240 USD.\n11. Trading volume daily limit is 266 million USD.\n12. Quarterly reporting deadline is 442 business days after quarter end.",
+  "event_counts": {},
+  "supersession_events": [],
+  "replay_s": 271.4,
+  "patched": true,
+  "num_ctx_extraction": 16384
+ },
+ {
+  "scenario_id": "hold-out-U005",
+  "scenario_type": "UPDATE_CONFLICT",
+  "total_turns": 500,
+  "recall": 0.0,
+  "found": 0,
+  "total_gt": 8,
+  "ccr": 0.9329,
+  "context_ua": [
+   {
+    "gt_id": "gt_003",
+    "has_new": false,
+    "has_old": false
+   }
+  ],
+  "behavior": [
+   {
+    "gt_id": "gt_003",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "143"
+    ],
+    "old_only_tokens": [
+     "172"
+    ],
+    "new_tokens_hit": [],
+    "old_tokens_hit": []
+   }
+  ],
+  "context_text": "- User inquired about the current status of general requirements for their project on October 7, 2026\n- User inquired about the current status of general requirements for the project on October 7, 2026\n- User requested to check the current status of general requirements for their project on October 7, 2026\n- User asked to check the current status of general requirements for their project on October 7, 2026\n- User asked to check the current status of their general requirements on October 7, 2026\n- User asked about the current status of general requirements for the project on October 7, 2026\n- User asked to check the current status of general requirements for the project on October 7, 2026\n- User checked the current status of their general requirements on October 7, 2026\n- User inquired about the current status of general requirements for their project multiple times on October 7, 2026\n- User asked to review the current status of general requirements for the project on October 7, 2026\n- User asked to check and review the current status of general requirements for the project on October 7, 2026\n- User checked the current status of their general requirements before a revision on October 7, 2026\n- User asked to update documentation for a new requirement related to general project requirements on October 7, 2026\n- User requested to review the constraints they have established on October 7, 2026\n- User inquired about the next requirement for the general project on October 7, 2026\n- User asked how the current requirements compare to industry standards on October 7, 2026\n- User inquired about the next requirement for their general project on October 7, 2026\n- User inquired how the current requirements compare to industry standards on October 7, 2026\n- User asked about the next requirement for the general project on October 7, 2026\n- User asked about the next requirement for their general project on October 7, 2026",
+  "answer_text": "Based on the provided memory, there is only one mention related to constraints:\n\n- User requested to review the constraints they have established on October 7, 2026\n\nHowever, no specific constraints are listed verbatim within the given memory. Therefore, I cannot provide a list of current general constraints and requirements as they are not explicitly stated in the memory provided.",
+  "event_counts": {},
+  "supersession_events": [],
+  "replay_s": 669.7,
+  "patched": true,
+  "num_ctx_extraction": 16384
+ },
+ {
+  "scenario_id": "hold-out-U006",
+  "scenario_type": "UPDATE_CONFLICT",
+  "total_turns": 500,
+  "recall": 0.0,
+  "found": 0,
+  "total_gt": 13,
+  "ccr": 0.9323,
+  "context_ua": [
+   {
+    "gt_id": "gt_004",
+    "has_new": false,
+    "has_old": false
+   },
+   {
+    "gt_id": "gt_002",
+    "has_new": false,
+    "has_old": false
+   }
+  ],
+  "behavior": [
+   {
+    "gt_id": "gt_004",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "36"
+    ],
+    "old_only_tokens": [
+     "98"
+    ],
+    "new_tokens_hit": [],
+    "old_tokens_hit": []
+   },
+   {
+    "gt_id": "gt_002",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "404mm"
+    ],
+    "old_only_tokens": [
+     "452mm"
+    ],
+    "new_tokens_hit": [],
+    "old_tokens_hit": []
+   }
+  ],
+  "context_text": "- User requested to review the constraints established so far for their engineering project\n- User checked the current status of their engineering requirements on October 7, 2026\n- User requested to review the constraints established so far for their engineering project on October 7, 2026\n- User requested to review the constraints they've established for their engineering project on October 7, 2026\n- User requested to review the constraints established for their engineering project on October 7, 2026\n- User requested to review the constraints they've established for their ongoing engineering project on October 7, 2026\n- User requested a summary of the constraints and requirements established so far\n- User asked for a summary of the constraints and requirements established so far\n- User asked about the next requirement for their ongoing engineering project on October 7, 2026\n- User asked about the next requirement for their ongoing engineering project\n- User requested to continue working on the engineering specifications for their project on October 7, 2026\n- User asked about the next requirement for their ongoing engineering project and requested to proceed with it\n- User requested to continue working on the engineering specifications for their project\n- User inquired about dependencies between the specifications discussed for their engineering project on October 7, 2026\n- User asked about dependencies between the specifications discussed for their ongoing engineering project on October 7, 2026\n- User requested to review the constraints established so far\n- User asked about dependencies between the specifications discussed in their ongoing engineering project on October 7, 2026\n- User asked to review the constraints established for the project\n- User asked how their engineering project's specifications compare to industry standards on October 7, 2026\n- Before revision, one of the specifications for user's engineering project was 321 on October 7, 2026",
+  "answer_text": "Based on the information provided in our conversation history, here are the constraints established so far for your engineering project:\n\n1. User requested to review the constraints established so far for their engineering project.\n2. User checked the current status of their engineering requirements on October 7, 2026.\n3. User requested a summary of the constraints and requirements established so far.\n4. Before revision, one of the specifications for user's engineering project was 321 on October 7, 2026.\n\nPlease note that these are not specific technical constraints but rather requests or actions taken by you to review and summarize your project's status. If there were more detailed technical constraints listed earlier in our conversation, they would need to be included here as well.",
+  "event_counts": {},
+  "supersession_events": [],
+  "replay_s": 624.0,
+  "patched": true,
+  "num_ctx_extraction": 16384
+ },
+ {
+  "scenario_id": "hold-out-U007",
+  "scenario_type": "UPDATE_CONFLICT",
+  "total_turns": 500,
+  "recall": 0.0,
+  "found": 0,
+  "total_gt": 13,
+  "ccr": 0.922,
+  "context_ua": [
+   {
+    "gt_id": "gt_004",
+    "has_new": false,
+    "has_old": false
+   },
+   {
+    "gt_id": "gt_003",
+    "has_new": false,
+    "has_old": false
+   },
+   {
+    "gt_id": "gt_009",
+    "has_new": false,
+    "has_old": false
+   }
+  ],
+  "behavior": [
+   {
+    "gt_id": "gt_004",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "173"
+    ],
+    "old_only_tokens": [
+     "160"
+    ],
+    "new_tokens_hit": [],
+    "old_tokens_hit": []
+   },
+   {
+    "gt_id": "gt_003",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "495"
+    ],
+    "old_only_tokens": [
+     "409"
+    ],
+    "new_tokens_hit": [],
+    "old_tokens_hit": []
+   },
+   {
+    "gt_id": "gt_009",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "101mL"
+    ],
+    "old_only_tokens": [
+     "53mL"
+    ],
+    "new_tokens_hit": [],
+    "old_tokens_hit": []
+   }
+  ],
+  "context_text": "- User checked the current status of medical requirements on October 7, 2026\n- User requested to review the constraints established during the medical specifications discussion on October 7, 2026\n- User is checking the current status of medical requirements for the project on October 7, 2026\n- User requested a review of the constraints established during the medical specifications discussion on October 7, 2026\n- Assistant summarized and recorded requirements discussed so far, including the medical project's specifications\n- User requested a review of established constraints during the medical specifications discussion on October 7, 2026\n- User asked how the current medical requirements compare to industry standards on October 7, 2026\n- User checked the current status of their medical requirements during the discussion on October 7, 2026\n- User asked to review established constraints during medical specifications discussion on October 7, 2026\n- User reviewed and summarized the constraints established for the medical project on October 7, 2026\n- User asked about reviewing the constraints established during the medical specifications discussion on October 7, 2026\n- User is focusing on medical specifications for the project and checking current status of requirements\n- User asked how the current medical project requirements compare to industry standards on October 7, 2026\n- User mentioned checking the current status of their medical requirements during the discussion on October 7, 2026\n- User reviewed the constraints established for the medical project on October 7, 2026\n- User asked how the current medical requirements compare to industry standards during the discussion on October 7, 2026\n- User inquired how the current requirements compare to industry standards during the medical project review on October 7, 2026\n- User requested to review established constraints and dependencies between specifications discussed in the medical project on October 7, 2026\n- User asked how the current requirements compare to industry standards during the medical project discussion on October 7, 2026\n- User asked how the current requirements compare to industry standards during the medical project review on October 7, 2026",
+  "answer_text": "Based on the provided memory, there is no specific list of verbatim constraints or detailed requirements mentioned. The conversation indicates that the user has reviewed and summarized the constraints established for the medical project but does not provide a direct quote or list of these constraints.\n\nIf you need a summary of what was discussed regarding constraints and requirements, I can provide that based on the context given in our previous exchanges. Please let me know if you would like this information summarized or if there is another specific aspect you are looking for within the constraints and requirements.",
+  "event_counts": {},
+  "supersession_events": [],
+  "replay_s": 665.8,
+  "patched": true,
+  "num_ctx_extraction": 16384
+ },
+ {
+  "scenario_id": "hold-out-U008",
+  "scenario_type": "UPDATE_CONFLICT",
+  "total_turns": 500,
+  "recall": 0.125,
+  "found": 1,
+  "total_gt": 8,
+  "ccr": 0.9336,
+  "context_ua": [
+   {
+    "gt_id": "gt_007",
+    "has_new": false,
+    "has_old": false
+   },
+   {
+    "gt_id": "gt_003",
+    "has_new": true,
+    "has_old": false
+   }
+  ],
+  "behavior": [
+   {
+    "gt_id": "gt_007",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "104"
+    ],
+    "old_only_tokens": [
+     "84"
+    ],
+    "new_tokens_hit": [],
+    "old_tokens_hit": []
+   },
+   {
+    "gt_id": "gt_003",
+    "ans_new_verbatim": true,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "353"
+    ],
+    "old_only_tokens": [
+     "298"
+    ],
+    "new_tokens_hit": [
+     "353"
+    ],
+    "old_tokens_hit": []
+   }
+  ],
+  "context_text": "- User checked the current status of legal requirements on October 7, 2026\n- User requested a summary of the current status of their legal requirements on October 7, 2026\n- User reviewed established constraints for their legal project on October 7, 2026\n- User mentioned continuing with legal specifications\n- User mentioned continuing with legal specifications on October 7, 2026\n- User expressed a desire to continue with legal specifications on October 7, 2026\n- User mentioned a recent conference related to the legal project requirements on October 7, 2026\n- User mentioned reviewing legal specifications and requirements for their project on October 7, 2026\n- User asked about the next requirement for their legal project on October 7, 2026\n- User mentioned discussing the next requirement for their legal project on October 7, 2026\n- User has another consideration for the project and asked about the next requirement for the legal project on October 7, 2026\n- User mentioned the next requirement for their legal project involves a specification originally set at 103 and later revised\n- User requested to review the constraints they've established\n- User has another consideration for the project and asked about continuing with legal specifications on October 7, 2026\n- User asked how their established constraints compare to industry standards on October 7, 2026\n- User inquired how the current requirements compare to industry standards on October 7, 2026\n- User asked if there are any dependencies between the specifications discussed in the legal project\n- User mentioned the next requirement for their legal project involves a specification originally set at 603 and later revised\n- User updated a previous requirement for the legal project to Confidentiality obligation extends 353 years after termination (replacing an earlier specification) on October 7, 2026\n- User specified another consideration for the project and asked about the next requirement for the legal project on October 7, 2026",
+  "answer_text": "Based on the information provided in our conversation on October 7, 2026, here are the current legal constraints and requirements:\n\n1. Confidentiality obligation extends 353 years after termination (replacing an earlier specification)\n2. A specification originally set at 103 and later revised\n3. A specification originally set at 603 and later revised\n\nThese are the specific constraints and requirements mentioned in our discussion.",
+  "event_counts": {},
+  "supersession_events": [],
+  "replay_s": 725.3,
+  "patched": true,
+  "num_ctx_extraction": 16384
+ },
+ {
+  "scenario_id": "hold-out-U009",
+  "scenario_type": "UPDATE_CONFLICT",
+  "total_turns": 1000,
+  "recall": 0.0,
+  "found": 0,
+  "total_gt": 13,
+  "ccr": 0.9634,
+  "context_ua": [
+   {
+    "gt_id": "gt_005",
+    "has_new": false,
+    "has_old": false
+   }
+  ],
+  "behavior": [
+   {
+    "gt_id": "gt_005",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "320%"
+    ],
+    "old_only_tokens": [
+     "289%"
+    ],
+    "new_tokens_hit": [],
+    "old_tokens_hit": []
+   }
+  ],
+  "context_text": "- User requested a summary of what has been covered so far regarding finance requirements and constraints on October 7, 2026\n- User requested to check the current status of finance requirements on October 7, 2026\n- User requested to check the current status of finance requirements on October 7, 2026\n- User requested to check the current status of finance requirements on October 7, 2026\n- Assistant updated documentation to account for user's request regarding the current status of finance requirements on October 7, 2026\n- Assistant updated documentation to account for user's request regarding the current status of finance requirements on October 7, 2026\n- Assistant updated documentation to account for user's request regarding the current status of finance requirements on October 7, 2026\n- User asked for a summary of what has been covered so far regarding finance requirements and constraints on October 7, 2026\n- User asked about the current status of their finance requirements on October 7, 2026\n- User checked the current status of their finance requirements on October 7, 2026\n- User asked about the next requirement for their finance project and requested an update on the current status of finance requirements on October 7, 2026\n- User requested to check the current status of their finance requirements on October 7, 2026\n- User requested to check the current status of their finance requirements on October 7, 2026\n- User requested to review the current status of their finance requirements on October 7, 2026\n- Assistant updated documentation to account for user's request regarding the current status of finance requirements\n- User asked how the current finance requirements compare to industry standards on October 7, 2026\n- User asked how the current finance requirements compare to industry standards on October 7, 2026\n- User asked how the current finance requirements compare to industry standards on October 7, 2026\n- User asked how the current finance requirements compare to industry standards on October 7, 2026\n- User asked how the current finance requirements compare to industry standards on October 7, 2026",
+  "answer_text": "The memory does not provide specific details about the current finance constraints and requirements. It only indicates repeated requests to check or review the status of these requirements without listing them explicitly. Therefore, I cannot list any verbatim constraints from the provided memory. If you have more detailed information or documentation that lists these specifics, please share it so I can assist further.",
+  "event_counts": {},
+  "supersession_events": [],
+  "replay_s": 1451.8,
+  "patched": true,
+  "num_ctx_extraction": 16384
+ },
+ {
+  "scenario_id": "hold-out-U010",
+  "scenario_type": "UPDATE_CONFLICT",
+  "total_turns": 1000,
+  "recall": 0.0,
+  "found": 0,
+  "total_gt": 13,
+  "ccr": 0.9613,
+  "context_ua": [
+   {
+    "gt_id": "gt_006",
+    "has_new": false,
+    "has_old": false
+   },
+   {
+    "gt_id": "gt_005",
+    "has_new": false,
+    "has_old": false
+   }
+  ],
+  "behavior": [
+   {
+    "gt_id": "gt_006",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "236"
+    ],
+    "old_only_tokens": [
+     "199"
+    ],
+    "new_tokens_hit": [],
+    "old_tokens_hit": []
+   },
+   {
+    "gt_id": "gt_005",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "170"
+    ],
+    "old_only_tokens": [
+     "148"
+    ],
+    "new_tokens_hit": [],
+    "old_tokens_hit": []
+   }
+  ],
+  "context_text": "- User asked to check the current status of general requirements on October 7, 2026\n- User requested to check the current status of general requirements for their project on October 7, 2026\n- User requested to check the current status of general requirements for their project on October 7, 2026\n- User requested to check the current status of general requirements for their project on October 7, 2026\n- User requested to check the current status of general requirements for the project on October 7, 2026\n- User checked the current status of their general requirements on October 7, 2026\n- User has another consideration for this project and requested to check the current status of general requirements on October 7, 2026\n- User has another consideration for the project and requested to check the current status of general requirements on October 7, 2026\n- User has another consideration for the project and requested to check the current status of general requirements on October 7, 2026\n- User has another consideration for the project and requested to check the current status of general requirements on October 7, 2026\n- User has another consideration for the project and requested to check the current status of general requirements on October 7, 2026\n- User mentioned another consideration for the project and requested to check the current status of general requirements on October 7, 2026\n- User requested to review established constraints for the general project on October 7, 2026\n- User has another consideration for the project and requested to check the current status of general requirements\n- User mentioned reviewing general specifications and constraints established for the project\n- User requested to review constraints established for the project and continue discussing general specifications on October 7, 2026\n- User checked the current status of their general requirements for the project multiple times on October 7, 2026\n- User mentioned reviewing general specifications and constraints established for the project on October 7, 2026\n- User requested to review the constraints established for the current project on October 7, 2026\n- User requested reviewing established constraints for their current project",
+  "answer_text": "Based on the provided memory, there is no specific list of \"current general constraints and requirements\" verbatim that can be extracted. The user has repeatedly requested to check or review these elements but hasn't received a detailed list within the context given. Therefore, I cannot provide an exact list as it does not appear in your previous interactions' content. If you have any specific details or if there was a document or summary provided earlier, please share that information so I can assist further.",
+  "event_counts": {},
+  "supersession_events": [],
+  "replay_s": 1197.2,
+  "patched": true,
+  "num_ctx_extraction": 16384
+ },
+ {
+  "scenario_id": "hold-out-U011",
+  "scenario_type": "UPDATE_CONFLICT",
+  "total_turns": 1000,
+  "recall": 0.0,
+  "found": 0,
+  "total_gt": 13,
+  "ccr": 0.9655,
+  "context_ua": [
+   {
+    "gt_id": "gt_007",
+    "has_new": false,
+    "has_old": false
+   },
+   {
+    "gt_id": "gt_012",
+    "has_new": false,
+    "has_old": false
+   },
+   {
+    "gt_id": "gt_005",
+    "has_new": false,
+    "has_old": false
+   }
+  ],
+  "behavior": [
+   {
+    "gt_id": "gt_007",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "267"
+    ],
+    "old_only_tokens": [
+     "365"
+    ],
+    "new_tokens_hit": [],
+    "old_tokens_hit": []
+   },
+   {
+    "gt_id": "gt_012",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "445"
+    ],
+    "old_only_tokens": [
+     "387"
+    ],
+    "new_tokens_hit": [],
+    "old_tokens_hit": []
+   },
+   {
+    "gt_id": "gt_005",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "283"
+    ],
+    "old_only_tokens": [
+     "328"
+    ],
+    "new_tokens_hit": [],
+    "old_tokens_hit": []
+   }
+  ],
+  "context_text": "- User checked the current status of engineering requirements on October 7, 2026\n- User checked the current status of engineering requirements on October 7, 2026\n- User asked to check the current status of engineering requirements\n- User asked to check the current status of engineering requirements on October 7, 2026\n- User asked to check the current status of engineering requirements on October 7, 2026\n- User requested to check the current status of engineering requirements on October 7, 2026\n- User requested to check the current status of engineering requirements on October 7, 2026\n- User requested a review of established constraints for their engineering requirements on October 7, 2026\n- User requested to review constraints established in their engineering requirements on October 7, 2026\n- User asked about the current status of their engineering requirements on October 7, 2026\n- User checked the current status of their engineering requirements on October 7, 2026\n- User asked to check the current status of engineering requirements for their project on October 7, 2026\n- User asked about the current status of engineering requirements for their project on October 7, 2026\n- User asked to check the current status of engineering requirements and requested comparison with industry standards on October 7, 2026\n- User wants to check the current status of their engineering requirements on October 7, 2026\n- User checked the current status of their engineering requirements and inquired about related parameters on October 7, 2026\n- Assistant acknowledged and noted that user wants to check the current status of engineering requirements on October 7, 2026\n- Assistant will summarize what has been covered so far regarding the engineering project requirements\n- User has another consideration for the project and asked about checking the current status of engineering requirements on October 7, 2026\n- User requested to review the constraints established for their engineering project on October 7, 2026",
+  "answer_text": "Based on the provided memory, there is no specific list of engineering constraints or requirements given. The user has repeatedly asked to check the status of their engineering requirements and requested reviews related to established constraints but did not provide a detailed list of current constraints and requirements.\n\nThe verbatim requests from the memory are:\n- \"User checked the current status of engineering requirements on October 7, 2026\"\n- \"User requested to review constraints established in their engineering requirements on October 7, 2026\"\n\nSince no specific details or lists were provided within the context given, I cannot list any applicable constraints verbatim as they are not explicitly stated.",
+  "event_counts": {},
+  "supersession_events": [],
+  "replay_s": 1460.6,
+  "patched": true,
+  "num_ctx_extraction": 16384
+ },
+ {
+  "scenario_id": "hold-out-U012",
+  "scenario_type": "UPDATE_CONFLICT",
+  "total_turns": 1000,
+  "recall": 0.0,
+  "found": 0,
+  "total_gt": 8,
+  "ccr": 0.969,
+  "context_ua": [
+   {
+    "gt_id": "gt_004",
+    "has_new": false,
+    "has_old": false
+   },
+   {
+    "gt_id": "gt_007",
+    "has_new": false,
+    "has_old": false
+   },
+   {
+    "gt_id": "gt_008",
+    "has_new": false,
+    "has_old": false
+   }
+  ],
+  "behavior": [
+   {
+    "gt_id": "gt_004",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "158"
+    ],
+    "old_only_tokens": [
+     "225"
+    ],
+    "new_tokens_hit": [],
+    "old_tokens_hit": []
+   },
+   {
+    "gt_id": "gt_007",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "205°C"
+    ],
+    "old_only_tokens": [
+     "232°C"
+    ],
+    "new_tokens_hit": [],
+    "old_tokens_hit": []
+   },
+   {
+    "gt_id": "gt_008",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "110"
+    ],
+    "old_only_tokens": [
+     "50"
+    ],
+    "new_tokens_hit": [],
+    "old_tokens_hit": []
+   }
+  ],
+  "context_text": "- User checked the current status of medical requirements on October 7, 2026\n- User requested to review the current status of medical requirements on October 7, 2026\n- User requested a review of the current status of medical requirements on October 7, 2026\n- User checked the current status of medical requirements for their project on October 7, 2026\n- User checked the current status of medical requirements for the project on October 7, 2026\n- User requested to check the current status of medical requirements for their project on October 7, 2026\n- User checked the current status of their medical requirements on October 7, 2026\n- User reviewed the current status of medical requirements for the project on October 7, 2026\n- User asked to check the current status of their medical requirements on October 7, 2026\n- User asked to check the current status of their medical requirements on October 7, 2026\n- User requested to check the current status of their medical requirements on October 7, 2026\n- User requested to check the current status of their medical requirements on October 7, 2026\n- User requested to review the constraints established for their medical project on October 7, 2026\n- User requested to review established constraints for their medical project on October 7, 2026\n- User requested to review established constraints for the medical project on October 7, 2026\n- User requested a review of established constraints for the medical project on October 7, 2026\n- User requested a review of established constraints for the medical project on October 7, 2026\n- User asked how their current medical requirements compare to industry standards on October 7, 2026\n- User asked about checking the current status of their medical requirements on October 7, 2026\n- User reviewed constraints established for their medical project on October 7, 2026",
+  "answer_text": "Based on the provided memory, there is no specific list of medical constraints or requirements given. The user has repeatedly asked to review or check the status of their medical project's requirements and constraints but did not specify any particular details about what those constraints are. Therefore, I cannot provide a verbatim list as requested since such information isn't present in the memory provided.",
+  "event_counts": {},
+  "supersession_events": [],
+  "replay_s": 1427.0,
+  "patched": true,
+  "num_ctx_extraction": 16384
+ },
+ {
+  "scenario_id": "hold-out-U013",
+  "scenario_type": "UPDATE_CONFLICT",
+  "total_turns": 200,
+  "recall": 0.8,
+  "found": 4,
+  "total_gt": 5,
+  "ccr": 0.8256,
+  "context_ua": [
+   {
+    "gt_id": "gt_002",
+    "has_new": false,
+    "has_old": true
+   }
+  ],
+  "behavior": [
+   {
+    "gt_id": "gt_002",
+    "ans_new_verbatim": true,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "550mm"
+    ],
+    "old_only_tokens": [
+     "495mm"
+    ],
+    "new_tokens_hit": [
+     "550mm"
+    ],
+    "old_tokens_hit": []
+   }
+  ],
+  "context_text": "- User reviewed the constraints established for an engineering project on October 7, 2026\n- User specified an important requirement for the engineering project: Tensile strength must be at least 174 MPa\n- User specified an important requirement for the engineering project: Operating pressure range is 241 to 547 bar\n- User asked about dependencies between specifications discussed in the engineering project on October 7, 2026\n- User specified an important requirement for the engineering project: Electrical insulation resistance minimum must be at least 848 MΩ\n- User specified an important requirement for the engineering project: Surface roughness Ra must not exceed 475 μm\n- User specified an important requirement for the engineering project: Surface roughness Ra must not exceed 475 μm\n- User specified an important requirement for the engineering project: Maximum operating temperature must not exceed 143°C\n- User provided a rough guideline for Material hardness of at least HRC 84 for the engineering project\n- User provided an important requirement for the engineering project: Minimum wall thickness shall be 495mm\n- User mentioned there are no dependencies between the specifications discussed so far\n- User updated the previous requirement for Minimum wall thickness to be 550mm, replacing the earlier specification of about 884mm\n- User mentioned that the specification was previously set to 363 for an old project, but this is no longer relevant\n- User mentioned that the old standard required a specification of 575, which has since been updated\n- User mentioned that the old standard required a specification of 97, which has since been updated\n- In version 1, the specification was 508 but has since been changed\n- User mentioned that the old standard required a specification of 833, which has since been updated\n- User mentioned that in version 1, the specification was 678 but it has since been changed\n- Historical data shows Operating pressure range is between 241 and 958 bar averaged in past projects\n- User provided a rough guideline for Minimum wall thickness shall be about 884mm",
+  "answer_text": "Here are the current engineering constraints and requirements based on the information provided:\n\n1. Tensile strength must be at least 174 MPa\n2. Operating pressure range is 241 to 547 bar\n3. Electrical insulation resistance minimum must be at least 848 MΩ\n4. Surface roughness Ra must not exceed 475 μm\n5. Maximum operating temperature must not exceed 143°C\n6. Material hardness of at least HRC 84 (provided as a guideline)\n7. Minimum wall thickness shall be 550mm",
+  "event_counts": {},
+  "supersession_events": [],
+  "replay_s": 252.1,
+  "patched": true,
+  "num_ctx_extraction": 16384
+ },
+ {
+  "scenario_id": "hold-out-U014",
+  "scenario_type": "UPDATE_CONFLICT",
+  "total_turns": 200,
+  "recall": 0.07692307692307693,
+  "found": 1,
+  "total_gt": 13,
+  "ccr": 0.8149,
+  "context_ua": [
+   {
+    "gt_id": "gt_011",
+    "has_new": false,
+    "has_old": false
+   }
+  ],
+  "behavior": [
+   {
+    "gt_id": "gt_011",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "483"
+    ],
+    "old_only_tokens": [
+     "385"
+    ],
+    "new_tokens_hit": [],
+    "old_tokens_hit": [
+     "385"
+    ]
+   }
+  ],
+  "context_text": "- User asked how their current medical project requirements compare to industry standards\n- User asked how the medical project requirements compare to industry standards\n- User asked for a summary of the medical project specifications discussed so far on October 7, 2026\n- User specified another requirement for the medical project: before revision, the specification was 251\n- User specified an important requirement for the medical project: patient BMI threshold for procedure must be below 85\n- User asked about dependencies between specifications discussed in the medical project on October 7, 2026\n- User asked to check the current status of medical requirements and confirmed that the heart rate alert threshold must be above 383 bpm\n- User mentioned a previous specification of 506 was discussed but it's not relevant to the current medical project\n- User specified an important requirement for the medical project: blood pressure target must be below 382/554 mmHg\n- User asked about dependencies between the specifications discussed in the medical project\n- User asked about dependencies between the specifications discussed in the medical project\n- User specified an important requirement for the medical project: Drug concentration must remain below 484 ng/mL\n- User specified an important requirement for the medical project: Drug concentration must remain below 484 ng/mL\n- User specified an important requirement for the medical project: dosage must not exceed 352mg per kg body weight\n- User specified an important requirement for the medical project: Hemoglobin threshold for transfusion must be below 385 g/dL\n- User asked to review the constraints and dependencies between the specifications discussed\n- User specified an important requirement for the medical project: medication interval must be at least 412 hours in informal settings\n- User specified an important requirement for the medical project: Ventilator tidal volume should ideally be around 468 mL per kg ideal body weight, though this is just a preference\n- User specified an important requirement for the medical project: heart rate alert threshold must be above 383 bpm\n- User specified an important requirement for the medical project: medication interval must be at least 142 hours",
+  "answer_text": "Here are the current medical constraints and requirements as listed:\n\n1. Patient BMI threshold for procedure must be below 85\n2. Heart rate alert threshold must be above 383 bpm\n3. Blood pressure target must be below 382/554 mmHg\n4. Drug concentration must remain below 484 ng/mL\n5. Dosage must not exceed 352mg per kg body weight\n6. Hemoglobin threshold for transfusion must be below 385 g/dL\n7. Medication interval must be at least 142 hours (Note: There was a previous mention of 412 hours in informal settings, but the current requirement is 142 hours)\n8. Ventilator tidal volume should ideally be around 468 mL per kg ideal body weight (This is noted as a preference)",
+  "event_counts": {},
+  "supersession_events": [],
+  "replay_s": 285.3,
+  "patched": true,
+  "num_ctx_extraction": 16384
+ },
+ {
+  "scenario_id": "hold-out-U015",
+  "scenario_type": "UPDATE_CONFLICT",
+  "total_turns": 200,
+  "recall": 0.0,
+  "found": 0,
+  "total_gt": 5,
+  "ccr": 0.8285,
+  "context_ua": [
+   {
+    "gt_id": "gt_004",
+    "has_new": false,
+    "has_old": false
+   },
+   {
+    "gt_id": "gt_001",
+    "has_new": false,
+    "has_old": false
+   }
+  ],
+  "behavior": [
+   {
+    "gt_id": "gt_004",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": true,
+    "new_only_tokens": [
+     "67"
+    ],
+    "old_only_tokens": [
+     "22"
+    ],
+    "new_tokens_hit": [],
+    "old_tokens_hit": [
+     "22"
+    ]
+   },
+   {
+    "gt_id": "gt_001",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "420"
+    ],
+    "old_only_tokens": [
+     "342"
+    ],
+    "new_tokens_hit": [],
+    "old_tokens_hit": []
+   }
+  ],
+  "context_text": "- User checked the current status of legal requirements and the assistant noted to factor this into analysis\n- User checked the current status of their legal requirements and the assistant recorded that requirement\n- User requested a summary of what has been covered so far in their legal project\n- User requested a review of established constraints and the assistant noted to update documentation accordingly\n- User requested to continue with legal specifications and the assistant noted proceeding accordingly\n- User requested to continue discussing legal specifications and the assistant acknowledged proceeding accordingly\n- User requested a review of established constraints and the assistant acknowledged updating documentation accordingly\n- User mentioned that the old standard required a specification of 955, which has since been updated\n- User mentioned the old standard required the specification of 288, which has since been updated\n- In version 1, the specification was 924 but has since been changed, as noted by user\n- User requested a review of established constraints, and the assistant acknowledged noting this\n- User continued with discussing legal specifications and the assistant acknowledged proceeding with the next item\n- User requested a review of established constraints and the assistant acknowledged noting this\n- User asked how their confidentiality obligation requirement compares to industry standards and the assistant noted to factor this into analysis\n- User specified an important requirement for liability cap not to exceed 192% of contract value\n- User specified that the force majeure notification deadline is 22 hours for their legal project, which the assistant recorded as a requirement\n- User mentioned the previous specification was 605 before it was revised\n- User requested to proceed with summarizing what has been covered so far\n- User asked about the next requirement for their legal project and the assistant noted to account for it\n- User asked if there are any dependencies between the specifications discussed",
+  "answer_text": "Here is a list of the current legal constraints and requirements as per our conversation:\n\n1. Factor the current status of legal requirements into analysis.\n2. Confidentiality obligation requirement to be compared with industry standards.\n3. Liability cap not to exceed 192% of contract value.\n4. Force majeure notification deadline is 22 hours.\n\nThese are the constraints and requirements that have been explicitly mentioned in our discussion so far.",
+  "event_counts": {},
+  "supersession_events": [],
+  "replay_s": 291.1,
+  "patched": true,
+  "num_ctx_extraction": 16384
+ },
+ {
+  "scenario_id": "hold-out-U016",
+  "scenario_type": "UPDATE_CONFLICT",
+  "total_turns": 200,
+  "recall": 0.0,
+  "found": 0,
+  "total_gt": 13,
+  "ccr": 0.8454,
+  "context_ua": [
+   {
+    "gt_id": "gt_012",
+    "has_new": false,
+    "has_old": false
+   },
+   {
+    "gt_id": "gt_009",
+    "has_new": false,
+    "has_old": false
+   },
+   {
+    "gt_id": "gt_004",
+    "has_new": false,
+    "has_old": false
+   }
+  ],
+  "behavior": [
+   {
+    "gt_id": "gt_012",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "77%"
+    ],
+    "old_only_tokens": [
+     "11%"
+    ],
+    "new_tokens_hit": [
+     "77%"
+    ],
+    "old_tokens_hit": []
+   },
+   {
+    "gt_id": "gt_009",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "274x"
+    ],
+    "old_only_tokens": [
+     "239x"
+    ],
+    "new_tokens_hit": [],
+    "old_tokens_hit": []
+   },
+   {
+    "gt_id": "gt_004",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "292"
+    ],
+    "old_only_tokens": [
+     "279"
+    ],
+    "new_tokens_hit": [
+     "292"
+    ],
+    "old_tokens_hit": []
+   }
+  ],
+  "context_text": "- User checked the current status of finance requirements on October 7, 2026\n- User asked about the current status of finance requirements for their project on October 7, 2026\n- User requested a review of the constraints established so far for the finance project\n- User requested a review of the constraints established for their finance project on October 7, 2026\n- User mentioned considering a recent conference in relation to finance requirements on October 7, 2026\n- User asked how recent finance requirements compare to industry standards\n- User requested a summary of the finance specifications covered so far\n- User read an article about a new software tool related to finance requirements on October 6, 2026\n- User specified a finance requirement for maximum portfolio exposure to single sector is 232%\n- User wants to review the constraints established so far\n- User mentioned considering remote work policies in relation to finance requirements\n- User's requirement for credit risk score is now a minimum of 292 points, replacing the earlier specification of 279 points\n- User specified a Debt-to-equity ratio ceiling of 432 for the finance project on October 7, 2026\n- User specified that the foreign exchange exposure limit is 209% of assets as an important requirement\n- User mentioned another consideration for the finance project but did not specify what it is\n- User mentioned considering a book recommendation in relation to their finance project on October 7, 2026\n- User updated the Capital adequacy ratio requirement to exceed 77%, replacing the earlier specification of exceeding 11%\n- User expressed interest in industry trends related to the finance project on October 7, 2026\n- User specified that the Net stable funding ratio minimum is ideally around 618%, though it is just a preference\n- User updated the requirement for Credit risk score to a minimum of 292 points, replacing an earlier specification",
+  "answer_text": "Here are the current finance constraints and requirements as specified:\n\n1. Maximum portfolio exposure to single sector is 232%\n2. Credit risk score minimum of 292 points\n3. Debt-to-equity ratio ceiling of 432\n4. Foreign exchange exposure limit is 209% of assets\n5. Capital adequacy ratio requirement exceeds 77%\n6. Net stable funding ratio ideally around 618%, though it is just a preference",
+  "event_counts": {},
+  "supersession_events": [],
+  "replay_s": 293.9,
+  "patched": true,
+  "num_ctx_extraction": 16384
+ },
+ {
+  "scenario_id": "hold-out-U017",
+  "scenario_type": "UPDATE_CONFLICT",
+  "total_turns": 500,
+  "recall": 0.0,
+  "found": 0,
+  "total_gt": 5,
+  "ccr": 0.9317,
+  "context_ua": [
+   {
+    "gt_id": "gt_005",
+    "has_new": false,
+    "has_old": false
+   }
+  ],
+  "behavior": [
+   {
+    "gt_id": "gt_005",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "64"
+    ],
+    "old_only_tokens": [
+     "45"
+    ],
+    "new_tokens_hit": [],
+    "old_tokens_hit": []
+   }
+  ],
+  "context_text": "- User requested to check the current status of their general requirements\n- User requested to check the current status of their general requirements on October 7, 2026\n- User requested a check of the current status of their general requirements\n- User requested to check the current status of their general requirements twice on October 7, 2026\n- User checked the current status of their general requirements and requested updates to be made accordingly\n- User requested a summary of the constraints and specifications covered so far in their project discussion\n- User requested to review the constraints established so far in their project discussion\n- User specified that the next requirement for their general project is to be discussed and requested to proceed with the specifications\n- User specified that the next requirement for their general project is to be discussed and requested to continue with the specifications\n- User requested to review the constraints established for their project on October 7, 2026\n- User decided to continue with the general specifications and related parameters on October 7, 2026\n- User discussed the next requirement for their general project and requested to continue with the specifications\n- User specified that they were thinking about the next requirement for their general project and requested to continue with the specifications\n- User asked to proceed with the next requirement for their general project\n- User requested to continue discussing general specifications for their project\n- User has another consideration for their current project and requested to continue discussing general specifications\n- User mentioned that the old standard required a specification of 807 which has since been updated\n- User asked if there are any dependencies between the specifications discussed\n- User requested a summary of the specifications covered so far in their project discussion on October 7, 2026\n- Before revision, the specification was set to 468 during project discussion on October 7, 2026",
+  "answer_text": "Based on the information provided in our previous conversation, here are the current general constraints and requirements:\n\n1. User requested to check the current status of their general requirements twice on October 7, 2026.\n2. Before revision, the specification was set to 468 during project discussion on October 7, 2026.\n3. The old standard required a specification of 807 which has since been updated.\n\nPlease note that these are the specific constraints and requirements mentioned in our conversation history. If there are additional details or updates not listed here, please let me know so I can provide a more comprehensive summary.",
+  "event_counts": {},
+  "supersession_events": [],
+  "replay_s": 634.7,
+  "patched": true,
+  "num_ctx_extraction": 16384
+ },
+ {
+  "scenario_id": "hold-out-U018",
+  "scenario_type": "UPDATE_CONFLICT",
+  "total_turns": 500,
+  "recall": 0.0,
+  "found": 0,
+  "total_gt": 8,
+  "ccr": 0.9135,
+  "context_ua": [
+   {
+    "gt_id": "gt_004",
+    "has_new": false,
+    "has_old": false
+   },
+   {
+    "gt_id": "gt_008",
+    "has_new": false,
+    "has_old": false
+   },
+   {
+    "gt_id": "gt_007",
+    "has_new": false,
+    "has_old": false
+   }
+  ],
+  "behavior": [
+   {
+    "gt_id": "gt_004",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "184"
+    ],
+    "old_only_tokens": [
+     "159"
+    ],
+    "new_tokens_hit": [],
+    "old_tokens_hit": []
+   },
+   {
+    "gt_id": "gt_008",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "390"
+    ],
+    "old_only_tokens": [
+     "351"
+    ],
+    "new_tokens_hit": [],
+    "old_tokens_hit": []
+   },
+   {
+    "gt_id": "gt_007",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "74"
+    ],
+    "old_only_tokens": [
+     "14"
+    ],
+    "new_tokens_hit": [],
+    "old_tokens_hit": []
+   }
+  ],
+  "context_text": "- User is reviewing the current status of engineering requirements and wants to ensure all specifications are documented on October 7, 2026\n- User asked to check the current status of engineering requirements during a discussion about specifications and requirements on October 7, 2026\n- User and assistant are summarizing the current status of engineering requirements and discussing related parameters on October 7, 2026\n- User is reviewing the current status of engineering requirements and wants to ensure all specifications are documented\n- User is checking the current status of engineering requirements for their project on October 7, 2026\n- User is reviewing the constraints established for their ongoing engineering project on October 7, 2026\n- User mentioned another consideration for this engineering project and is checking the current status of engineering requirements on October 7, 2026\n- User mentioned another consideration for their ongoing engineering project and is checking the current status of engineering requirements on October 7, 2026\n- User has another consideration for their ongoing engineering project and is checking the current status of requirements on October 7, 2026\n- User requested a review of the established constraints for their engineering project on October 7, 2026\n- User mentioned another consideration for their ongoing engineering project and is checking the current status of requirements on October 7, 2026\n- User asked to review established constraints for their ongoing engineering project on October 7, 2026\n- User and assistant are reviewing the constraints established for an ongoing engineering project on October 7, 2026\n- User and assistant are reviewing the constraints established for their engineering project on October 7, 2026\n- User and assistant are reviewing the constraints established for their ongoing engineering project on October 7, 2026\n- User and assistant are reviewing established constraints for an ongoing engineering project on October 7, 2026\n- User checked the current status of their engineering requirements for the ongoing project on October 7, 2026\n- User asked to continue with the engineering specifications during a discussion of ongoing project requirements on October 7, 2026\n- User asked the assistant to summarize what has been covered so far in the discussion of engineering requirements on October 7, 2026\n- User has another consideration for their ongoing engineering project and is reviewing requirements on October 7, 2026",
+  "answer_text": "Based on the provided memory, there is no specific list of engineering constraints or requirements given. The conversation indicates that the user has been reviewing and discussing these aspects but does not provide a detailed list of them. Therefore, I cannot list any verbatim constraints from the memory as requested. If you would like to review or summarize what was discussed regarding constraints and requirements, we can do so based on the context provided in the memory.",
+  "event_counts": {},
+  "supersession_events": [],
+  "replay_s": 706.2,
+  "patched": true,
+  "num_ctx_extraction": 16384
+ },
+ {
+  "scenario_id": "hold-out-U019",
+  "scenario_type": "UPDATE_CONFLICT",
+  "total_turns": 500,
+  "recall": 0.0,
+  "found": 0,
+  "total_gt": 13,
+  "ccr": 0.9351,
+  "context_ua": [
+   {
+    "gt_id": "gt_010",
+    "has_new": false,
+    "has_old": false
+   }
+  ],
+  "behavior": [
+   {
+    "gt_id": "gt_010",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "125"
+    ],
+    "old_only_tokens": [
+     "222"
+    ],
+    "new_tokens_hit": [],
+    "old_tokens_hit": []
+   }
+  ],
+  "context_text": "- User and assistant are discussing the current status of medical requirements on October 7, 2026\n- User is checking the current status of medical requirements for their project on October 7, 2026\n- User checked the current status of their medical requirements on October 7, 2026\n- User requested a review of established constraints in their medical project specifications on October 7, 2026\n- User wants to check the current status of their medical requirements on October 7, 2026\n- User wants to review the constraints established for their medical project\n- User checked the current status of their medical requirements\n- User requested a review of the established constraints in their medical project on October 7, 2026\n- User and assistant are reviewing established constraints for the medical project\n- The specification was set to 662 in the old project but is no longer applicable for the current medical project\n- User inquired about the next requirement for their medical project\n- User wants to continue with the medical specifications and compare them to industry standards\n- User mentioned that the specification was set to 28 in the old project but is not applicable for the current medical project on October 7, 2026\n- User is considering the next requirement for their medical project and wants to compare it to industry standards\n- The specification was set to 309 in the old project but is no longer applicable for the current medical project\n- User asked about the next requirement for their medical project on October 7, 2026\n- User wants to compare their current medical project specifications with industry standards on October 7, 2026\n- User wants to compare the current specifications of their medical project with industry standards\n- User wants to compare their current specifications with industry standards in their medical project\n- The old standard for the user's medical project required a specification of 824, which has since been updated",
+  "answer_text": "Based on the information provided in our conversation memory, here are the specific mentions of constraints and requirements for your medical project:\n\n1. The specification was set to 662 in the old project but is no longer applicable for the current medical project.\n2. The specification was set to 28 in the old project but is not applicable for the current medical project on October 7, 2026.\n3. The specification was set to 309 in the old project but is no longer applicable for the current medical project.\n\nThe memory does not provide specific details about the current constraints and requirements beyond noting that certain specifications from previous projects are no longer applicable. For a detailed review of the current constraints and requirements, we would need to refer back to your project documentation or specifications document.",
+  "event_counts": {},
+  "supersession_events": [],
+  "replay_s": 708.6,
+  "patched": true,
+  "num_ctx_extraction": 16384
+ },
+ {
+  "scenario_id": "hold-out-U020",
+  "scenario_type": "UPDATE_CONFLICT",
+  "total_turns": 500,
+  "recall": 0.0,
+  "found": 0,
+  "total_gt": 5,
+  "ccr": 0.9362,
+  "context_ua": [
+   {
+    "gt_id": "gt_004",
+    "has_new": false,
+    "has_old": false
+   },
+   {
+    "gt_id": "gt_005",
+    "has_new": false,
+    "has_old": false
+   }
+  ],
+  "behavior": [
+   {
+    "gt_id": "gt_004",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "303"
+    ],
+    "old_only_tokens": [
+     "398"
+    ],
+    "new_tokens_hit": [],
+    "old_tokens_hit": []
+   },
+   {
+    "gt_id": "gt_005",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "252"
+    ],
+    "old_only_tokens": [
+     "240"
+    ],
+    "new_tokens_hit": [],
+    "old_tokens_hit": []
+   }
+  ],
+  "context_text": "- User asked to check the current status of legal requirements for their project on October 7, 2026\n- User checked the current status of legal requirements for their ongoing project on October 7, 2026\n- User checked the status of legal requirements for their ongoing project on October 7, 2026\n- User requested to review the constraints established for their legal project on October 7, 2026\n- User requested to review the constraints established for their legal project on October 7, 2026\n- User reviewed the constraints established for their legal project on October 7, 2026\n- User reviewed established constraints for their legal project on October 7, 2026\n- User requested a summary of what has been covered so far regarding their legal specifications on October 7, 2026\n- User requested a summary of what has been covered so far regarding their legal specifications on October 7, 2026\n- User reviewed the constraints established for their legal project\n- User inquired about the next requirement for their legal project on October 7, 2026\n- User asked to summarize what has been covered so far regarding their legal specifications on October 7, 2026\n- User inquired about the next requirement for their ongoing legal project on October 7, 2026\n- User asked for a summary of what has been covered so far regarding their legal specifications on October 7, 2026\n- User inquired about the next requirement for their ongoing legal project\n- User continued discussing legal specifications for their current project on October 7, 2026\n- User asked about the next requirement for their legal project on October 7, 2026\n- User asked about the next requirement for their ongoing legal project on October 7, 2026\n- User asked to summarize what has been covered so far regarding their legal specifications\n- User discussed continuing with the legal specifications of their current project on October 7, 2026",
+  "answer_text": "Based on the provided memory, there is no specific list of legal constraints or requirements mentioned. The user has repeatedly asked for information regarding the status and next steps of their legal project but did not provide a detailed list of current legal constraints and requirements within the context given. Therefore, I cannot list any verbatim as they do not appear in the memory provided.",
+  "event_counts": {},
+  "supersession_events": [],
+  "replay_s": 757.9,
+  "patched": true,
+  "num_ctx_extraction": 16384
+ },
+ {
+  "scenario_id": "hold-out-U021",
+  "scenario_type": "UPDATE_CONFLICT",
+  "total_turns": 1000,
+  "recall": 0.0,
+  "found": 0,
+  "total_gt": 8,
+  "ccr": 0.964,
+  "context_ua": [
+   {
+    "gt_id": "gt_008",
+    "has_new": false,
+    "has_old": false
+   },
+   {
+    "gt_id": "gt_004",
+    "has_new": false,
+    "has_old": false
+   }
+  ],
+  "behavior": [
+   {
+    "gt_id": "gt_008",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "515%"
+    ],
+    "old_only_tokens": [
+     "436%"
+    ],
+    "new_tokens_hit": [],
+    "old_tokens_hit": []
+   },
+   {
+    "gt_id": "gt_004",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "205"
+    ],
+    "old_only_tokens": [
+     "125"
+    ],
+    "new_tokens_hit": [],
+    "old_tokens_hit": []
+   }
+  ],
+  "context_text": "- User asked about the current status of finance requirements on October 7, 2026\n- Assistant acknowledged and updated documentation regarding the current status of finance requirements on October 7, 2026\n- User checked the current status of their finance requirements on October 7, 2026\n- User checked the current status of their finance requirements on October 7, 2026\n- User checked the current status of their finance requirements on October 7, 2026\n- User asked to check the current status of their finance requirements on October 7, 2026\n- User requested checking the current status of their finance requirements on October 7, 2026\n- User asked about the current status of finance requirements and requested to proceed with the next item on October 7, 2026\n- User checked the current status of finance requirements for their project on October 7, 2026\n- User checked the current status of finance requirements for their project on October 7, 2026\n- User asked to check the current status of finance requirements for their project on October 7, 2026\n- User asked to check the current status of finance requirements for their project on October 7, 2026\n- User requested a review of the current status of their finance requirements on October 7, 2026\n- User checked the current status of their finance project requirements on October 7, 2026\n- Assistant recorded that user's requirement to check current status of finance requirements on October 7, 2026\n- User mentioned checking the current status of finance requirements for their project on October 7, 2026\n- Assistant acknowledged and asked if there is anything else to consider regarding the constraints established for the finance project on October 7, 2026\n- User asked the assistant to update documentation regarding the current status of finance requirements on October 7, 2026\n- User requested to review the constraints established for their finance project on October 7, 2026\n- User requested to review the constraints established for their finance project on October 7, 2026",
+  "answer_text": "Based on the provided memory, there is no specific list of finance constraints or requirements verbatim. The user has repeatedly asked to check or review the status of their finance requirements but did not specify particular constraints. Therefore, I cannot provide a list of exact constraints as requested.\n\nHowever, from the context, it appears that documentation regarding the current status of finance requirements was updated and acknowledged multiple times. If you need specific details about these constraints, please refer to the updated documentation or provide more detailed information so I can assist further.",
+  "event_counts": {},
+  "supersession_events": [],
+  "replay_s": 1372.4,
+  "patched": true,
+  "num_ctx_extraction": 16384
+ },
+ {
+  "scenario_id": "hold-out-U022",
+  "scenario_type": "UPDATE_CONFLICT",
+  "total_turns": 1000,
+  "recall": 0.0,
+  "found": 0,
+  "total_gt": 5,
+  "ccr": 0.9727,
+  "context_ua": [
+   {
+    "gt_id": "gt_004",
+    "has_new": false,
+    "has_old": false
+   }
+  ],
+  "behavior": [
+   {
+    "gt_id": "gt_004",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "186"
+    ],
+    "old_only_tokens": [
+     "218"
+    ],
+    "new_tokens_hit": [],
+    "old_tokens_hit": []
+   }
+  ],
+  "context_text": "- User requested to check the current status of general requirements\n- User checked the current status of general requirements on October 7, 2026\n- User requested to check the current status of general requirements on October 7, 2026\n- User requested to check the current status of general requirements on October 7, 2026\n- User requested to check the current status of general requirements on October 7, 2026\n- User asked to check the current status of general requirements\n- User asked to check the current status of general requirements\n- User checked the current status of general requirements for the project on October 7, 2026\n- User checked the current status of their general requirements\n- User checked the current status of their general requirements around October 7, 2026\n- User inquired about the current status of general requirements and assistant noted it on October 7, 2026\n- User requested a summary of what has been covered so far in relation to project specifications and constraints\n- User asked about the next requirement for the current general project\n- User requested a review of established constraints on October 7, 2026\n- User compared current requirements to industry standards\n- User inquired about the next requirement for the general project\n- User inquired about the next requirement for the general project on October 7, 2026\n- User inquired about the next requirement for the general project on October 7, 2026\n- User asked to summarize what has been covered so far and requested a review of established constraints\n- User suggested reviewing the constraints they've established so far",
+  "answer_text": "Based on the provided memory, there is no specific list of constraints or requirements mentioned. The user has repeatedly asked to check the status of general requirements and constraints but did not provide a detailed list of them within the context given. Therefore, I cannot list verbatim any specific constraints as they are not explicitly stated in the memory. If you have a specific set of constraints or requirements that were discussed previously, please provide more details so I can assist further.",
+  "event_counts": {},
+  "supersession_events": [],
+  "replay_s": 1294.5,
+  "patched": true,
+  "num_ctx_extraction": 16384
+ },
+ {
+  "scenario_id": "hold-out-U023",
+  "scenario_type": "UPDATE_CONFLICT",
+  "total_turns": 1000,
+  "recall": 0.0,
+  "found": 0,
+  "total_gt": 13,
+  "ccr": 0.9668,
+  "context_ua": [
+   {
+    "gt_id": "gt_006",
+    "has_new": false,
+    "has_old": false
+   },
+   {
+    "gt_id": "gt_001",
+    "has_new": false,
+    "has_old": false
+   }
+  ],
+  "behavior": [
+   {
+    "gt_id": "gt_006",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "32g"
+    ],
+    "old_only_tokens": [
+     "87g"
+    ],
+    "new_tokens_hit": [],
+    "old_tokens_hit": []
+   },
+   {
+    "gt_id": "gt_001",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "284°C"
+    ],
+    "old_only_tokens": [
+     "260°C"
+    ],
+    "new_tokens_hit": [],
+    "old_tokens_hit": []
+   }
+  ],
+  "context_text": "- User checked the current status of engineering requirements on October 7, 2026\n- User checked the current status of their engineering requirements on October 7, 2026\n- User checked the current status of their engineering requirements on October 7, 2026\n- User checked the current status of engineering requirements for their project on October 7, 2026\n- User checked the current status of engineering requirements for their project on October 7, 2026\n- User checked the current status of engineering requirements for their project on October 7, 2026\n- User checked the current status of engineering requirements for their project on October 7, 2026\n- User specified that the next requirement for their engineering project is to review established constraints\n- User checked the current status of engineering requirements for their project\n- User specified that the next requirement for their engineering project is to review established constraints on October 7, 2026\n- User requested to review the constraints they've established for their engineering project\n- User requested to review the constraints established for their engineering project\n- User requested to review the constraints established for their engineering project\n- User asked how the current requirements compare to industry standards for their engineering project\n- User requested to review the constraints they've established for their engineering project on October 7, 2026\n- User requested to review the constraints they've established for their engineering project on October 7, 2026\n- User requested to review the constraints they've established for their engineering project on October 7, 2026\n- User requested to review the constraints they've established for their engineering project on October 7, 2026\n- User requested to review the constraints established for their engineering project on October 7, 2026\n- User requested to review the constraints established for their engineering project on October 7, 2026",
+  "answer_text": "Based on the provided memory, there is no specific list of current engineering constraints or requirements given. The user has repeatedly requested to review established constraints but no details about what those constraints are have been listed in the memory. Therefore, I cannot provide a verbatim list of applicable constraints as they do not appear explicitly in the conversation history.",
+  "event_counts": {},
+  "supersession_events": [],
+  "replay_s": 1385.4,
+  "patched": true,
+  "num_ctx_extraction": 16384
+ },
+ {
+  "scenario_id": "hold-out-U024",
+  "scenario_type": "UPDATE_CONFLICT",
+  "total_turns": 1000,
+  "recall": 0.0,
+  "found": 0,
+  "total_gt": 8,
+  "ccr": 0.9639,
+  "context_ua": [
+   {
+    "gt_id": "gt_006",
+    "has_new": false,
+    "has_old": false
+   }
+  ],
+  "behavior": [
+   {
+    "gt_id": "gt_006",
+    "ans_new_verbatim": false,
+    "ans_old_verbatim": false,
+    "new_only_tokens": [
+     "152mm"
+    ],
+    "old_only_tokens": [
+     "171mm"
+    ],
+    "new_tokens_hit": [],
+    "old_tokens_hit": []
+   }
+  ],
+  "context_text": "- User mentioned reviewing the constraints established for medical requirements\n- User requested the current status of medical requirements for their project around October 7, 2026\n- User requested to check the current status of medical requirements for their project on October 7, 2026\n- User asked to check the current status of medical requirements for their project on October 7, 2026\n- User checked the current status of their medical requirements on October 7, 2026\n- User requested to check the current status of medical requirements for their project around October 7, 2026\n- User requested to check the current status of medical requirements for their project around October 7, 2026\n- User has another consideration for their medical project and requested to check the current status of medical requirements\n- User requested a review of established constraints and specifications for their medical project on October 7, 2026\n- User checked the current status of their medical requirements and requested a summary of what has been covered so far in terms of specifications on October 7, 2026\n- User requested to review the constraints established for their medical project on October 7, 2026\n- User requested to review the constraints established for their medical project on October 7, 2026\n- User requested to review the constraints established for their medical project on October 7, 2026\n- User requested to review the constraints established for their medical project around October 7, 2026\n- User requested to review the constraints established for their medical project around October 7, 2026\n- User requested to review established constraints for their medical project on October 7, 2026\n- User requested to review established constraints for the medical project on October 7, 2026\n- User requested to review the constraints established for their medical project\n- User requested a review of established constraints for the medical project\n- User has another consideration for their medical project and requested an update on the current status of requirements",
+  "answer_text": "Based on the provided memory, there is no specific list of medical constraints and requirements given. The user has repeatedly requested to review or check the status of these constraints and requirements for their project around October 7, 2026, but no exact verbatim details of what those constraints are have been listed in the conversation history. Therefore, I cannot provide a list as requested since none is explicitly stated in the memory provided.",
+  "event_counts": {},
+  "supersession_events": [],
+  "replay_s": 1329.2,
+  "patched": true,
+  "num_ctx_extraction": 16384
+ }
+]

@@ -1,0 +1,6 @@
+configuration,recall_mean,ccr_mean
+Naive,0.3440,0.4371
+RAG,0.0000,0.9821
+EpSem,0.8818,0.8247
+EpSem-F,0.8818,0.9051
+EpSem-SS,0.9909,0.8560

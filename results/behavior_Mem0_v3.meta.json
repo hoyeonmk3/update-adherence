@@ -1,0 +1,44 @@
+{
+ "stamp": {
+  "runner_sha256": "666971c4ce089995e8173286e62af62fce234c4a760e9b9d04836bf201a70507",
+  "base_runner_sha256": "3f23d238bcd9bbe21d8aac4b7b39fcc01788f74cf3790836573393af3ae5d4d8",
+  "mem0_ollama_llm_sha256": "72b0f52b7d99dbfa854bbb1a8c706fd56396e53da89b5c75c439db599a2cf2c5",
+  "mem0_prompts_sha256": "10bc8a34b3b5f0ce24560a2a3190c9112b979a891b981f48393bbd168d915a5c",
+  "mem0ai": "2.0.17",
+  "ollama_client": "0.6.2",
+  "qdrant_client": "1.19.0",
+  "python": "3.12.13",
+  "macos": "26.6",
+  "ollama_server": "0.24.0",
+  "gen_model": "qwen2.5:14b-instruct-q4_K_M",
+  "embedder": "nomic-embed-text",
+  "batch": 10,
+  "search_k": 20,
+  "num_ctx_extraction": 16384,
+  "num_ctx_answer": "server default (unchanged, parity with other arms)"
+ },
+ "started": "2026-10-07T08:50:00",
+ "n_scenarios": 24,
+ "max_turns": null,
+ "server_log": "serve_11434_new.log (Ollama server log of the run, not released)",
+ "log_counts_before": {
+  "truncating input prompt": 0,
+  "input truncated": 0,
+  "context shift": 0,
+  "n_discard": 0
+ },
+ "finished": "2026-10-07T14:04:21",
+ "log_counts_after": {
+  "truncating input prompt": 0,
+  "input truncated": 0,
+  "context shift": 0,
+  "n_discard": 0
+ },
+ "log_delta": {
+  "truncating input prompt": 0,
+  "input truncated": 0,
+  "context shift": 0,
+  "n_discard": 0
+ },
+ "calls_total": 1360
+}
