@@ -6,6 +6,10 @@ Scoring is deterministic given the generated outputs. Both UA stages use literal
 
 Generation is deterministic only on the pinned stack. The runners request temperature 0 and seed 42 wherever the interface exposes them, and a repeated EpSem-SS run on the 24 Update Conflict scenarios (`results/behavior_EpSemSupersession_rerun.json`) reproduced the canonical contexts, answers, event outcomes, recall, and CCR exactly. A different Ollama version, model build, or GPU numeric kernel can change generated text, and a similarity judgment that sits near the detector threshold can then flip.
 
+## Regenerating the scenarios
+
+The 84 scenario files are produced by seeded template generators and no model is involved. `generator/scenario_generator.py` builds Batch A from the configuration table in the file (seeds 40000 to 40011 for Forgetting, 50000 to 50011 for Noise Tolerance, 60000 to 60011 for Update Conflict). `generator/generate_v5_scenarios.py` builds Batch B from a second configuration table (seeds 70000 to 90011). `generator/derive_implicit.py` rewrites only the explicit update utterances of the 12 Batch A Update Conflict scenarios into the three restatement forms (T1 transition-marked, T2 bare, T3 conversational), sets `scenario_id` to `hold-out-U0xx_impT<n>`, and adds the field `implicit_tier`. `generator/regenerate_scenarios.py` runs the three steps into a directory of your choice and compares every file with `scenarios/`, byte for byte and then as parsed JSON, against fixed expected file sets (36, 36, 12, and the 48 names of `scenarios/fn/`, which must be copies of the Forgetting and Noise Tolerance files of both batches); any missing, unexpected, or differing file ends the run with exit status 1. On 2026-10-15 all 84 regenerated files were byte-identical to the released files. The generators write LF line endings on every platform. The released files carry no timestamp; the run log that the Batch B generator writes beside its output is not part of the released set. The offline scripts need Python 3.10 or later; the Python 3.9.6 of the pinned stack below is the runtime of the original model runs.
+
 ## Pinned stack of the reported runs
 
 | Item | Setting |
@@ -23,7 +27,7 @@ Generation is deterministic only on the pinned stack. The runners request temper
 
 ## Integrity
 
-`MANIFEST.sha256` lists the SHA-256 of every file under `engine/`, `scenarios/`, `results/`, and `figures/data/`. Verify with `shasum -a 256 -c MANIFEST.sha256`. The engine files are identical in every executable statement to the engine of the reported runs. The runners were rewritten from the archived execution tree to repository-relative paths, so the `runner_sha256` fields inside the result files refer to the execution copies, not to the files in `runners/`.
+`MANIFEST.sha256` lists the SHA-256 of every file under `engine/`, `scenarios/`, `results/`, and `figures/data/`. Verify with `python analysis/verify_manifest.py` (standard library only), or with `shasum -a 256 -c MANIFEST.sha256` or `sha256sum -c MANIFEST.sha256` where those tools exist. `reproduce.sh` runs the verifier first and stops with a non-zero exit status on any missing or changed file, and every later step of the script stops it in the same way, passing the failing step's own exit status through. SciPy is optional and affects only the three Wilcoxon p-values in `analysis/offline_analyses_report.md`. The engine files are identical in every executable statement to the engine of the reported runs. The runners were rewritten from the archived execution tree to repository-relative paths, so the `runner_sha256` fields inside the result files refer to the execution copies, not to the files in `runners/`.
 
 ## Mem0 run
 

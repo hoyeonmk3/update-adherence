@@ -1,16 +1,15 @@
 """Call-count probe: count language-model / embedding calls and prompt+response sizes per configuration on one scenario.
 Monkeypatches requests.post inside the frozen engine; engine code untouched. Store-level replay only (no answers)."""
 import json, sys, time, collections
-sys.path.insert(0, str(Path(__file__).resolve().parent))
+from pathlib import Path
 import requests
-import sys as _sys
-from pathlib import Path as _Path
-_sys.path.insert(0, str(_Path(__file__).resolve().parents[1]))  # repository root on sys.path
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))  # repository root on sys.path
 from engine.epsem_filtered import EpSemFiltered
 from engine.epsem_supersession import EpSemSupersession
 from engine.base import Message
-SC = sys.argv[1] if len(sys.argv) > 1 else str(Path(__file__).resolve().parent / "scenarios" / "holdout_v4" / "U001_v4.json")
-sc = json.load(open(SC)); mts = set(sc["evaluation_protocol"]["measurement_turns"])
+SC = sys.argv[1] if len(sys.argv) > 1 else str(ROOT / "scenarios" / "holdout_v4" / "U001_v4.json")
+sc = json.load(open(SC, encoding="utf-8")); mts = set(sc["evaluation_protocol"]["measurement_turns"])
 _post = requests.post
 def run(cls, name):
     stats = collections.defaultdict(lambda: [0, 0, 0, 0.0])  # calls, prompt chars, response chars, seconds

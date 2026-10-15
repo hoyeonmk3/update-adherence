@@ -764,7 +764,7 @@ def main():
                   f"domain={scenario['domain']}")
         else:
             out_file = out_dir / f"{sid.replace('hold-out-', '')}_v4.json"
-            with open(out_file, "w", encoding="utf-8") as f:
+            with open(out_file, "w", encoding="utf-8", newline="\n") as f:  # LF on every platform
                 json.dump(scenario, f, ensure_ascii=False, indent=2)
 
     print(f"\n{'='*60}")

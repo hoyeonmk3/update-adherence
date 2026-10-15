@@ -7,16 +7,23 @@ scenarios from a new SCENARIO_CONFIGS set.
 
 - seed range disjoint from v4
 - same domain/turn/type distribution
-- writes generation_log.json
+- writes generation_log.json (a run log, not part of the released scenario set)
+
+Usage: python generator/generate_v5_scenarios.py --output-dir DIR
+       (default DIR: datasets/holdout_v5, relative to the current directory; the released copy is scenarios/holdout_v5)
 """
-import json, sys
+import argparse, json, sys
 from pathlib import Path
 from datetime import datetime
 
 sys.path.insert(0, str(Path(__file__).parent))
 from scenario_generator import generate_scenario, DOMAINS
 
-OUTPUT_DIR = Path("datasets/holdout_v5")
+_parser = argparse.ArgumentParser(description="Batch B scenario generator (36 scenarios, seeds 70000-90011)")
+_parser.add_argument("--output-dir", type=str, default="datasets/holdout_v5",
+                     help="Output directory for the generated scenarios (default: datasets/holdout_v5)")
+_args = _parser.parse_args()
+OUTPUT_DIR = Path(_args.output_dir)
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # ─────────────────────────────────────────────
@@ -118,11 +125,11 @@ for config in SCENARIO_CONFIGS_V5:
     try:
         scenario = generate_scenario(config)
         sid = scenario["scenario_id"]
-        stats[scenario["scenario_type"]] += 1
 
         out_file = OUTPUT_DIR / f"{sid.replace('hold-out-', '')}_v5.json"
-        with open(out_file, "w", encoding="utf-8") as f:
+        with open(out_file, "w", encoding="utf-8", newline="\n") as f:  # LF on every platform
             json.dump(scenario, f, ensure_ascii=False, indent=2)
+        stats[scenario["scenario_type"]] += 1  # counted only after the file is written
 
         mt = scenario["evaluation_protocol"]["measurement_turns"]
         gt = scenario["ground_truth_constraints"]
@@ -141,18 +148,18 @@ for config in SCENARIO_CONFIGS_V5:
             "status": "OK",
         })
 
-        print(f"  ✓ {sid:25s} | {scenario['scenario_type']:18s} | "
+        print(f"  ok  {sid:25s} | {scenario['scenario_type']:18s} | "
               f"turns={scenario['total_turns']:5d} | gt={len(gt):2d} | "
               f"cp={len(mt):2d} | ua={len(ua):2d} | domain={scenario['domain']}")
 
     except Exception as e:
         errors.append({"scenario_id": config["scenario_id"], "error": str(e)})
-        print(f"  ✗ {config['scenario_id']}: {e}")
+        print(f"  ERR {config['scenario_id']}: {e}")
 
 # Save generation log
 gen_log["stats"] = stats
 gen_log["errors"] = errors
-with open(OUTPUT_DIR / "generation_log.json", "w") as f:
+with open(OUTPUT_DIR / "generation_log.json", "w", encoding="utf-8", newline="\n") as f:
     json.dump(gen_log, f, indent=2, ensure_ascii=False)
 
 print(f"\n{'='*60}")
@@ -162,3 +169,5 @@ for stype, count in stats.items():
 print(f"Errors: {len(errors)}")
 print(f"Output: {OUTPUT_DIR.resolve()}")
 print(f"Log: {(OUTPUT_DIR / 'generation_log.json').resolve()}")
+if errors:
+    sys.exit(1)

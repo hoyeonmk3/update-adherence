@@ -197,5 +197,5 @@ except ImportError: P("  (scipy not installed; p-values not recomputed)")
 for label, k, n in [("EpSem-SS store UA (Qwen)", 14, 45), ("EpSem-SS store UA (Phi-3)", 12, 45), ("EpSem-SS behavior UA verbatim", 34, 45), ("EpSem-SS behavior UA own-words", 22, 45), ("EpSem-SS behavior UA no-form", 18, 45), ("Naive store UA", 6, 45)]:
     lo, hi = wilson(k, n); P(f"Wilson 95% CI {label}: {k}/{n} = {100*k/n:.1f}% [{lo:.1f}, {hi:.1f}]")
 
-Path(ROOT / "analysis" / "offline_analyses_report.md").write_text("\n".join(out) + "\n", encoding="utf-8")
+Path(ROOT / "analysis" / "offline_analyses_report.md").write_text("\n".join(out) + "\n", encoding="utf-8", newline="\n")
 print("\n".join(out))

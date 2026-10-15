@@ -1,6 +1,6 @@
-# Two-Stage Measurement of Update Adherence in Language Model Memory Agents
+# Two-stage measurement of Update Adherence in language model memory agents
 
-Benchmark scenarios, event records, frozen memory engine, and scoring scripts for the paper of the same title.
+Benchmark scenarios, their generator, event records, frozen memory engine, and scoring scripts for the paper of the same title (submitted to PeerJ Computer Science).
 
 **Update Adherence (UA)** measures whether a revised requirement, and not the statement it replaced, governs the answer of a language model agent with external memory. It is scored at two stages with deterministic rules and no language-model judge: in the assembled context that the memory system hands to the answering model (context-level UA, categories Correct, Stale-Retained, Stale-Only, Lost) and in the generated answer (strict answer-level UA, categories NewOnly, Both, OldOnly, Neither). Every number in the paper can be recomputed from the files in this repository.
 
@@ -12,7 +12,7 @@ Benchmark scenarios, event records, frozen memory engine, and scoring scripts fo
 | `scenarios/holdout_v5/` | Batch B, 36 conversations, 20 update events. |
 | `scenarios/implicit/` | The 12 Batch A Update Conflict conversations with the revision reworded (transition-marked, bare, or conversational), 25 events. |
 | `scenarios/fn/` | The 48 Forgetting and Noise Tolerance conversations used for the F/N checks and the quantile calibration. |
-| `generator/` | Seeded scenario generator and templates. |
+| `generator/` | Seeded scenario generator with its templates (`scenario_generator.py`, Batch A), the Batch B configuration (`generate_v5_scenarios.py`), the derivation of the implicit variants (`derive_implicit.py`), and `regenerate_scenarios.py`, which regenerates all 84 scenario files and compares them with `scenarios/`. See "Regenerating the scenarios" below. |
 | `engine/` | Frozen memory engine: Naive (`naive_memory.py`), RAG (`rag_memory.py`), EpSem (`epsem_memory.py`), EpSem-F (`epsem_filtered.py`), EpSem-SS with Constraint Supersession (`epsem_supersession.py`), the event emitter, and `epsem_supersession_alt.py`, a derived copy with the six thresholds exposed for the embedder transfer. `epsem_ablated.py` and `summary_memory.py` are earlier modules kept with the frozen set and not used in the reported runs. Identical in every executable statement to the engine of the reported runs. |
 | `runners/` | Scripts that produced the result files: canonical runs, the behavior probe with the three answer prompts, the threshold sweep, the SS-noRetire (`noretire_memory.py`) and LWW (`lww_memory.py`) variants, TS-Read (`run_tsread_arm.py`), Mem0, the embedder transfer, the similarity pairs, the call probe, and the shell chains that sequence them. |
 | `results/` | Event records of every reported run. See the data map below. |
@@ -23,13 +23,16 @@ Benchmark scenarios, event records, frozen memory engine, and scoring scripts fo
 
 ## Reproducing the paper from the released files
 
-No model is needed for this step.
+No model is needed for this step. Run every command from the repository root. The offline scripts need Python 3.10 or later and were tested with Python 3.12.
 
 ```bash
 pip install -r requirements.txt
-shasum -a 256 -c MANIFEST.sha256        # integrity of engine, scenarios, results, figure data
+python analysis/verify_manifest.py       # integrity of engine, scenarios, results, figure data (standard library only)
 python analysis/make_tables.py           # writes analysis/tables.md and figures/data/*.csv
+bash reproduce.sh                        # the two steps above plus the independent checks; stops with a non-zero exit status on any failure
 ```
+
+`shasum -a 256 -c MANIFEST.sha256` or `sha256sum -c MANIFEST.sha256` verifies the manifest as well where those tools exist. SciPy is optional: without it, `analysis/offline_analyses.py` records the three Wilcoxon p-values of `analysis/offline_analyses_report.md` as not recomputed, and no table or figure value is affected.
 
 `analysis/tables.md` then contains Tables 5 to 9 of the paper, the context-by-answer cross-tabulations, the event breakdowns quoted in the Results, the retention summary with the paired bootstrap intervals, and the figure data.
 
@@ -43,6 +46,28 @@ python analysis/make_tables.py           # writes analysis/tables.md and figures
 | Table 9 (three answer prompts) | `analysis/make_tables.py` (table9), `analysis/prompt_ablation_aggregate.py` | `results/behavior_*_prompt_ablation.json` |
 | Figs. 6, 7, 8 (retention and compression) | `analysis/retention_summary.py` | `results/canonical/*.json` |
 | Mem0 context outcomes by value tokens | `analysis/figure_data.py`, `analysis/mem0_v3_summary.py` | `results/behavior_Mem0_v3.json` |
+
+## Regenerating the scenarios
+
+The 84 scenario files are produced by seeded template generators, and no model is needed. The command below regenerates all of them into a directory of your choice and compares every file with the released copy, first byte for byte and then as parsed JSON.
+
+```bash
+python generator/regenerate_scenarios.py --output-dir /tmp/ua_regen
+```
+
+On Windows PowerShell: `python generator/regenerate_scenarios.py --output-dir "$env:TEMP\ua_regen"`.
+
+| Step | Script | Seeds | Output | Released copy |
+|---|---|---|---|---|
+| Batch A, 36 conversations | `generator/scenario_generator.py --output-dir DIR` | 40000 to 40011 (Forgetting), 50000 to 50011 (Noise Tolerance), 60000 to 60011 (Update Conflict) | `DIR/*_v4.json` | `scenarios/holdout_v4/` |
+| Batch B, 36 conversations | `generator/generate_v5_scenarios.py --output-dir DIR` | 70000 to 70011, 80000 to 80011, 90000 to 90011 | `DIR/*_v5.json` and a run log `generation_log.json` | `scenarios/holdout_v5/` |
+| Implicit variants, 12 conversations | `generator/derive_implicit.py --base-dir BATCH_A_DIR --output-dir DIR` | none (deterministic rewording of the update utterances of U001 to U012; `scenario_id` gains the suffix `_impT<n>` and the field `implicit_tier` is added) | `DIR/U0xx_impT{1,2,3}.json` | `scenarios/implicit/` |
+
+The comparison checks the expected file sets (36, 36, and 12 names, and the 48 names of `scenarios/fn/`) and stops with exit status 1 on any missing, unexpected, or differing file. Regeneration is deterministic. On 2026-10-15 every regenerated file was byte-identical to the released file (Batch A 36 of 36, Batch B 36 of 36, implicit variants 12 of 12), and the 48 files of `scenarios/fn/` were confirmed to be copies of the Forgetting and Noise Tolerance files of the two batches. The generators write LF line endings on every platform so that the comparison holds on Windows as well. The run log written by the Batch B generator is not part of the released set.
+
+Each scenario file is one JSON object with `scenario_id`, `version`, `scenario_type`, `params` (turn count, ground-truth count and timing, distractor density and types, domain, seed), `seed`, `total_turns`, `domain`, `query`, `turns` (one object per utterance with `turn`, `role`, `content`, and the flags `is_constraint` and `is_distractor`), `ground_truth_constraints`, `gt_metadata`, `evaluation_protocol` (measurement turns and update targets), and, for Update Conflict scenarios, `update_schedule`. The implicit variants add `implicit_tier`. `docs/data_map.md` maps every element of the paper to its files and scripts.
+
+Dependencies: regeneration uses only the Python standard library (3.10 or later). The recomputation above needs the packages in `requirements.txt` (`requests`, `pyyaml`, `numpy`), with SciPy optional as noted there. The model runners below additionally need a local Ollama server, and the optional packages per arm are listed under "Environment of the reported runs". The Python 3.9.6 in that table is the runtime of the original model runs, not a requirement for the offline scripts.
 
 ## Re-running the experiments
 
@@ -84,15 +109,23 @@ Run every command from the repository root. The runners were rewritten from the 
 - `results/superseded/`: two earlier Mem0 runs made with the default 4,096-token window, under which every extraction prompt was truncated. They are kept as a record and are not used.
 - Figure files themselves are not part of the repository; the values behind each figure are in `figures/data/`.
 
+## Development note
+
+Claude Fable 5.1 (Anthropic) through Claude Code assisted in writing and revising the memory engine, the runners, and the scoring and analysis scripts. The code was reviewed before release, and the released scripts reproduce every reported table from the released result files.
+
 ## Licenses
 
 Code (engine, runners, generator, analysis): [MIT](LICENSE). Scenario data, result data, and figure data (`scenarios/`, `results/`, `figures/data/`): [CC BY 4.0](LICENSE-DATA).
 
 ## Citation
 
-Lee H. Two-Stage Measurement of Update Adherence in Language Model Memory Agents. Manuscript. Repository release v1.0, archived at https://doi.org/10.5281/zenodo.23280325.
+Lee H. Two-stage measurement of Update Adherence in language model memory agents. Manuscript submitted to PeerJ Computer Science. Repository release v1.1, archived at https://doi.org/10.5281/zenodo.23394829 (release v1.0, with which the manuscript was prepared, is at https://doi.org/10.5281/zenodo.23280325; the concept DOI https://doi.org/10.5281/zenodo.23280324 resolves to the latest release).
 
-See `CITATION.cff`.
+See `CITATION.cff` and `CHANGELOG.md`.
+
+## Contributing
+
+The scenario files, result files, and the frozen engine are a record of the reported runs and are not changed. Questions, corrections to the documentation, and reports of reproduction problems are welcome as GitHub issues. Measurements on other serving stacks or models are best published as separate result sets rather than as changes to `results/`.
 
 ## Contact
 
